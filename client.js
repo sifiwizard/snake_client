@@ -13,6 +13,9 @@ const connect = function () {
   conn.on('connect', () => {
     console.log("Connection Established to Game Server")
     conn.write("Name: ACP");
+    // setInterval(() => {
+    //   conn.write("Move: up")
+    // }, 50);
   })
 
   conn.on("data", (data) => {
