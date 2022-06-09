@@ -39,7 +39,12 @@ const setupInput =  (conn) => {
           conn.write("Move: down")
         }, 100);      
       }
-
+      if (key == '\u0068') {
+        conn.write("Say: Hello");
+      }
+      if (key == '\u0074') {
+        conn.write("Say: Thunderrrr")
+      }
     });
   };
 
